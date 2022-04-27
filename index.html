@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown | Rocketseat</title>
+  <link rel="shortcut icon" href="./assets/images/rocket.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="counter()">
+  <img src="./assets/images/top-image.svg" alt="Imagem decorativa do topo" class="top-image">
+  <main>
+    <div class="container-left">
+      <h1>Ready to launch in...</h1>
+      <div class="data">
+        <span id="days">Dias</span>
+        <span id="hours">Horas</span>
+        <span id="minutes">Minutos</span>
+        <span id="seconds">Segundos</span>
+      </div>
+      <div id="horarioOficial">
+      </div>
+      <p id="inscricao">Inscreva-se para saber mais sobre o lançamento</p>
+      <button onclick="mostrarModal()" type="submit" class="btnInsc" title="Inscreva-se">Inscreva-se</button>
+
+    </div>
+    <div class="container-right">
+      <img class="rocket" src="./assets/images/rocket.svg" alt="Imagem Foguete">
+    </div>
+  </main>
+  <img class="bottom-image" src="./assets/images/bottom-image.svg" alt="Imagem Decorativa da base">
+
+  <audio controls autoplay>
+    <source src="./assets/sounds/countdow-ideal.mp4" type="audio/mp4">
+  </audio>
+
+  <section class="secao-modal">
+    <form action="#" id="form-modal">
+      <h1>Preencha os dados e se inscreva!</h1>
+      <input class="entrada-form" type="text"placeholder="Informe se nome completo"/>
+      <input class="entrada-form" type="email" name="email" id="email" placeholder="Informe seu email"/>
+      <input class="entrada-form" type="tel" name="telefone" id="telefone" placeholder="Informe o seu celular: (00) 0 0000-0000" />
+      <input class="btnInsc btnModal" type="submit" value="Inscrever!"/>
+    </form>
+
+    <button onclick="fecharModal()" title="Fechar" class="close"> X </button>
+
+  </section>
+
+  <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
