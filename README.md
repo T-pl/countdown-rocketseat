@@ -1,7 +1,6 @@
 # Countdown Rocketseat
 </hr>
-</br>
-
+![Layout do Projeto](https://myoctocat.com/assets/images/base-octocat.svg)
 ### Tópicos 
 
 
